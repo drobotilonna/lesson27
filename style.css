@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+}
+@font-face{
+    font-family: "mini";
+    font-weight: 500;
+   src: url(/Users/ilonadrobot/Library/Fonts/GraphikRegular.otf);
+}
+@font-face{
+    font-family: "max";
+    font-weight: 700;
+    src: url(/Users/ilonadrobot/Library/Fonts/GraphikRegular.otf);
+}
+.con{
+    max-width: 1000px;
+    margin: auto;
+    
+}
+.header{
+    background-color: rgb(15, 15, 15);
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 33px;
+    padding-bottom: 69px;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+    font-family:  "mini";
+}
+.menu-nav{
+    width: 390px;
+    display:flex ;
+    justify-content: space-between;
+}
+.login{
+    display: block;
+    height:52px ;
+    width: 139px;
+    border: 1px solid white;
+    font-family: "max";
+    text-align: center;
+    line-height: 52px;
+    text-decoration: none;
+    color: white;
+}
+@media (max-width:830px) {
+    .menu-nav{
+        display: none;
+    }
+}
