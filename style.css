@@ -4,12 +4,12 @@ body{
 @font-face{
     font-family: "mini";
     font-weight: 500;
-   src: url(/Users/ilonadrobot/Library/Fonts/GraphikRegular.otf);
+   src: url(./GraphikRegular.otf);
 }
 @font-face{
     font-family: "max";
     font-weight: 700;
-    src: url(/Users/ilonadrobot/Library/Fonts/GraphikRegular.otf);
+    src: url(./GraphikMedium.otf);
 }
 .con{
     max-width: 1000px;
@@ -143,14 +143,14 @@ body{
     color: white;
     font-size: 52px;
     font-family: 'max';
-    font-weight: 500;
+    font-weight: 100;
     margin: 0;
     text-align: center;
 }
 .contents-text{
     color: white;
     font-size: 20px;
-    font-family: 'max';
+    font-family: 'mini';
     font-weight: 500;
     margin: auto;
     text-align: center;
@@ -210,10 +210,58 @@ body{
     margin: 0 auto;
     margin-top: 50px;
 }
-@media (  max-width:1000px) {
+@media ( max-width:1000px) {
     .contents-bloucks{
         display: none;
         display: block;
-       margin-left: 120px;
+      
+    }
+}
+@media ( max-width:650px) {
+    .contents-bloucks{
+        
+
+    }
+}
+.mack{
+    position: relative;
+    left: 40px;
+    top: 30px;
+}
+.board{
+    position: relative;
+    left: 23px;
+    top: 15px;
+}
+
+.gallery{
+    padding-top: 200px;
+    background-color:  rgb(19, 18, 18); 
+    
+}
+.gallery-photos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    min-height: 614px;
+    width: 1087px;
+    margin: 0 auto;
+    
+}
+.gallery-photo{
+   border-radius: 12px;
+   margin-top: 20px;
+}
+@media (max-width:1035px) {
+    .gallery-photos{
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+
+    }
+    .gallery-photo{
+        width: 50%;
+        margin-bottom: 30px;
     }
 }
