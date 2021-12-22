@@ -182,13 +182,15 @@ body{
     text-align: center;
 }
 .contents-text{
+    max-width: 580px;
     color: white;
     font-size: 20px;
     font-family: 'mini';
     font-weight: 500;
-    margin: 0;
+    margin: 0 auto;
     text-align: center;
     margin-bottom: 20px;
+   
     
 }
 .contents-bloucks{
@@ -271,6 +273,11 @@ body{
         margin: 0 8px 20px 8px;
     }
 }
+@media (max-width:768px) {
+    .contents-blouck{
+        
+        height: 624px;
+    }
 
 
 .mack{
